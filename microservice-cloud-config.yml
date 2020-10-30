@@ -9,6 +9,9 @@ spring:
     profiles: dev # 开发环境
     application:
         name: microservice-config-dev
+
+redis:
+    password: 123
 ---
 server:
     port: 4002 #端口号
@@ -16,3 +19,6 @@ spring:
     profiles: prod # 生产环境
     application:
         name: microservice-config-prod
+
+redis:
+    password: 456
